@@ -114,7 +114,7 @@ export default function Home() {
             <div className="mt-12 flex justify-center space-x-6">
               {/* Replace # with your real URLs */}
               <a
-                href="https://github.com/your-username"
+                href="https://github.com/ionutpetru4046"
                 className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-200"
               >
                 <svg
@@ -126,7 +126,7 @@ export default function Home() {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com/in/your-username"
+                href="https://www.linkedin.com/in/coste-ionut-petru-7531312bb/"
                 className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-200"
               >
                 <svg
