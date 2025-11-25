@@ -557,7 +557,7 @@ export default function Home() {
                       Email
                     </div>
                     <div className="text-gray-600 dark:text-gray-300">
-                      hello@developer.com
+                      costewebdev@gmail.com
                     </div>
                   </div>
                 </div>
@@ -583,7 +583,7 @@ export default function Home() {
                       Phone
                     </div>
                     <div className="text-gray-600 dark:text-gray-300">
-                      +1 (555) 123-4567
+                      0899809162
                     </div>
                   </div>
                 </div>
@@ -615,7 +615,7 @@ export default function Home() {
                       Location
                     </div>
                     <div className="text-gray-600 dark:text-gray-300">
-                      San Francisco, CA
+                      Dublin City Center, Ireland
                     </div>
                   </div>
                 </div>
