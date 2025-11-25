@@ -73,13 +73,13 @@ export default function Navbar() {
                 {/* Dropdown Menu */}
                 <div
                   className="
-      absolute left-0 mt-2 w-48 bg-white dark:bg-gray-800 
-      border border-gray-200 dark:border-gray-700 
-      rounded-lg shadow-lg z-50
-      opacity-0 invisible
-      group-hover:opacity-100 group-hover:visible
-      transition-all duration-200
-    "
+                        absolute left-0 mt-2 w-48 bg-white dark:bg-gray-800 
+                        border border-gray-200 dark:border-gray-700 
+                        rounded-lg shadow-lg z-50
+                        opacity-0 invisible
+                        group-hover:opacity-100 group-hover:visible
+                        transition-all duration-200
+                      "
                 >
                   <button
                     onClick={() => router.push("/services/web-development")}
