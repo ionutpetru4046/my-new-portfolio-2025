@@ -1,5 +1,7 @@
+/* eslint-disable react/jsx-no-undef */
 'use client';
 
+import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
 import Navbar from '@/components/Navbar';
 
@@ -234,64 +236,83 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects" className="py-20 bg-white dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Featured Projects</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300">
-              A showcase of my recent work and achievements
-            </p>
+
+{/* Projects Section */}
+<section id="projects" className="py-20 bg-white dark:bg-gray-900">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Featured Projects</h2>
+      <p className="text-lg text-gray-600 dark:text-gray-300">
+        A showcase of my recent work and achievements
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          title: "Expert Automotive",
+          description: "Full-stack e-commerce solution with payment integration and admin dashboard",
+          technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+          image: "/expertAutomotive.png",
+          link: "https://mechanic-website-tau.vercel.app/"
+        },
+        {
+          title: "Joshua Barber Shop",
+          description: "Collaborative task management application with real-time updates",
+          technologies: ["Next.js", "TypeScript", "PostgreSQL", "Socket.io"],
+          image: "/barber.png",
+          link: "https://barbershop-website-chi.vercel.app/"
+        },
+        {
+          title: "VirtualR",
+          description: "Beautiful weather application with location-based forecasts",
+          technologies: ["React", "API Integration", "Tailwind CSS"],
+          image: "/virtualR.png",
+          link: "https://landing-page-3dpjrrx48-ionutpetru4046s-projects.vercel.app/"
+        }
+      ].map((project) => (
+        <div key={project.title} className="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          {/* Project image */}
+          <div className="relative h-48 w-full">
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              className="object-cover"
+            />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "E-Commerce Platform",
-                description: "Full-stack e-commerce solution with payment integration and admin dashboard",
-                technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-                image: "/api/placeholder/400/250"
-              },
-              {
-                title: "Task Management App",
-                description: "Collaborative task management application with real-time updates",
-                technologies: ["Next.js", "TypeScript", "PostgreSQL", "Socket.io"],
-                image: "/api/placeholder/400/250"
-              },
-              {
-                title: "Weather Dashboard",
-                description: "Beautiful weather application with location-based forecasts",
-                technologies: ["React", "API Integration", "Tailwind CSS"],
-                image: "/api/placeholder/400/250"
-              }
-            ].map((project) => (
-              <div key={project.title} className="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="h-48 bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center">
-                  <span className="text-white text-lg font-semibold">Project Image</span>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
-                    {project.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech) => (
-                      <span key={tech} className="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                  <button className="w-full px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300">
-                    View Project
-                  </button>
-                </div>
-              </div>
-            ))}
+          <div className="p-6">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+              {project.title}
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+              {project.description}
+            </p>
+            <div className="flex flex-wrap gap-2 mb-4">
+              {project.technologies.map((tech) => (
+                <span key={tech} className="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full">
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            {/* Clickable button */}
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full inline-block text-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
+            >
+              View Project
+            </a>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Experience Section */}
       <section id="experience" className="py-20 bg-gradient-to-r from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-900">
