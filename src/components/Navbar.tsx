@@ -31,7 +31,6 @@ export default function Navbar() {
     } else {
       router.push(href);
     }
-
     setIsMenuOpen(false);
   };
 
@@ -167,12 +166,34 @@ export default function Navbar() {
           <div>
             <button
               onClick={() => setServicesOpen(!servicesOpen)}
-              className="block w-full text-left px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+              className="flex w-full items-center justify-between px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition"
             >
-              Services
+              <span>Services</span>
+              {/* Arrow icon */}
+              <svg
+                className={`h-5 w-5 transition-transform duration-300 ${
+                  servicesOpen ? "rotate-180" : "rotate-0"
+                }`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
             </button>
 
-            {servicesOpen && (
+            {/* Animated submenu */}
+            <div
+              className={`
+                overflow-hidden transition-all duration-300 
+                ${servicesOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}
+              `}
+            >
               <div className="ml-4 space-y-1 mt-1">
                 <button
                   onClick={() => router.push("/services/web-development")}
@@ -199,7 +220,7 @@ export default function Navbar() {
                   Consulting
                 </button>
               </div>
-            )}
+            </div>
           </div>
         </div>
       )}
