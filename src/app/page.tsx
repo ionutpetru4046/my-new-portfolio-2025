@@ -251,22 +251,22 @@ export default function Home() {
       {[
         {
           title: "Expert Automotive",
-          description: "Full-stack e-commerce solution with payment integration and admin dashboard",
-          technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+          description: "A Full-Stack Booking and service Website built for a local mechanic shop. It includes an online booking system, service listings, and a secure admin dashboard to manage appointments and customer data.",
+          technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Vite"],
           image: "/expertAutomotive.png",
           link: "https://mechanic-website-tau.vercel.app/"
         },
         {
           title: "Joshua Barber Shop",
-          description: "Collaborative task management application with real-time updates",
-          technologies: ["Next.js", "TypeScript", "PostgreSQL", "Socket.io"],
+          description: "A modern barbershop website built for a real client. Fully responsive and animated using Framer Motion, it includes services, gallery, testimonials carousel, and a booking CTA.",
+          technologies: ["Next.js", "TypeScript", "TailwindCSS", "Framer-Motion", "Swiper.js"],
           image: "/barber.png",
           link: "https://barbershop-website-chi.vercel.app/"
         },
         {
           title: "VirtualR",
-          description: "Beautiful weather application with location-based forecasts",
-          technologies: ["React", "API Integration", "Tailwind CSS"],
+          description: "Empower your creativity and bring your VR app ideas to life with our intuitive development tools. Get started today and turn your imagination into immersive reality!.",
+          technologies: ["React", "Vite", "Tailwind CSS", "Framer-Motion"],
           image: "/virtualR.png",
           link: "https://landing-page-3dpjrrx48-ionutpetru4046s-projects.vercel.app/"
         }
