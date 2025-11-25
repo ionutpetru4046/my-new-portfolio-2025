@@ -809,6 +809,77 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Services Section */}
+<section id="services" className="py-20 bg-gray-50 dark:bg-gray-900">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {/* Section Header */}
+    <div className="text-center mb-16">
+      <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        Services
+      </h2>
+      <p className="text-lg text-gray-600 dark:text-gray-300">
+        What I offer to help your business grow and succeed
+      </p>
+    </div>
+
+    {/* Service Cards */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      {/* Web Development */}
+      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+        <div className="text-4xl mb-4 text-blue-600 dark:text-blue-400 flex items-center justify-center">
+          💻
+        </div>
+        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 text-center">
+          Web Development
+        </h3>
+        <p className="text-gray-600 dark:text-gray-300 text-sm text-center">
+          Build modern, responsive websites with React, Next.js, Node.js, and more.
+        </p>
+      </div>
+
+      {/* Mobile Apps */}
+      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+        <div className="text-4xl mb-4 text-green-600 dark:text-green-400 flex items-center justify-center">
+          📱
+        </div>
+        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 text-center">
+          Mobile Apps
+        </h3>
+        <p className="text-gray-600 dark:text-gray-300 text-sm text-center">
+          Create high-performance mobile applications for iOS and Android.
+        </p>
+      </div>
+
+      {/* UI/UX Design */}
+      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+        <div className="text-4xl mb-4 text-pink-600 dark:text-pink-400 flex items-center justify-center">
+          🎨
+        </div>
+        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 text-center">
+          UI/UX Design
+        </h3>
+        <p className="text-gray-600 dark:text-gray-300 text-sm text-center">
+          Design intuitive and beautiful user interfaces for web and mobile apps.
+        </p>
+      </div>
+
+      {/* Consulting */}
+      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+        <div className="text-4xl mb-4 text-purple-600 dark:text-purple-400 flex items-center justify-center">
+          🧠
+        </div>
+        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 text-center">
+          Consulting
+        </h3>
+        <p className="text-gray-600 dark:text-gray-300 text-sm text-center">
+          Provide expert advice on web development, app strategies, and design solutions.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
